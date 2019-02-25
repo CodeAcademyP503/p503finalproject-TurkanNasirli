@@ -1,0 +1,127 @@
+﻿
+@{
+    ViewData["Title"] = "Advertising";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+<link rel="stylesheet" href="~/css/advsing-job.css" />
+<section id="advertising-p">
+    <div class="parallax advertising-cont">
+        <hgroup class="pheading">
+            <h2>Elan yerləşdir</h2>
+            <h6>Vakansiyanı təsvir et</h6>
+        </hgroup>
+    </div>
+</section>
+<section id="create-vacancy">
+    <div class="show">
+        <h2>Vakansiyanı təsvir edin</h2>
+
+    </div>
+
+    <form action="">
+        <div class="form-group">
+            <h2 class="heading">İş haqqında</h2>
+            <div class="controls">
+                <input type="text" id="mission" class="floatLabel" name="_mission">
+                <label for="mission">Vəzifə</label>
+            </div>
+            <div class="controls">
+                <textarea type="text" id="aboutjob" class="floatLabel" name="_about" cols="30" rows="10"></textarea>
+                <label for="aboutjob">İş haqqında</label>
+            </div>
+            <div class="controls">
+                <textarea type="text" id="jobdemand" class="floatLabel" name="_demands" cols="30" rows="10"></textarea>
+                <label for="jobdemand">İşə qoyulan tələblər</label>
+            </div>
+            <div class="controls">
+                <input type="text" id="category_" class="floatLabel" name="_category">
+                <label for="category_">Kategoriya</label>
+            </div>
+            <div class="controls">
+                <input type="text" id="city" class="floatLabel" name="_city">
+                <label for="city">Şəhər</label>
+            </div>
+            <div class="controls">
+                <input type="text" id="graphic" class="floatLabel" name="_graphic">
+                <label for="graphic">İş qrafiki</label>
+            </div>
+            <div class="control">
+                <div class="interview">
+                    <input type="checkbox" id="payment-agree" class="floatLabel" name="_payment">
+                    <label for="payment-agree">Maaş razılaşma/Müsahibə əsasında təyin ediləcək.</label>
+                </div>
+            </div>
+
+            <div class="grid">
+
+                <div class="col-1-2">
+                    <div class="controls">
+                        <input type="number" id="minpay" class="floatLabel" name="minpayment" min="0" max="4000">
+                        <label for="maxpay">Minimum maaş</label>
+                    </div>
+                </div>
+                <div class="col-1-2">
+                    <div class="controls">
+                        <input type="number" id="maxpay" class="floatLabel" name="maxpayment" min="0" max="4000">
+                        <label for="minpay">Maksimum maaş </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="col-1-2">
+                    <div class="controls">
+                        <input type="number" id="maxage" class="floatLabel" name="maximumage" max="64" min="18">
+                        <label for="maxage">Minimum yaş</label>
+                    </div>
+                </div>
+                <div class="col-1-2">
+                    <div class="controls">
+                        <input type="number" id="min-age" class="floatLabel" name="maximumage" min="18" max="64">
+                        <label for="min-age">Minimum yaş</label>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <input type="text" id="experience" class="floatLabel" name="experience_">
+                <label for="experience">Təcrübə</label>
+            </div>
+            <div class="controls">
+                <input type="text" id="education" class="floatLabel" name="education_">
+                <label for="education">Təhsil</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <h2 class="heading">Şirkət haqqında</h2>
+            <div class="controls">
+                <input type="text" id="company" class="floatLabel" name="company_">
+                <label for="company">Şirkət adı</label>
+            </div>
+        </div>
+
+        <!--  Details -->
+        <div class="form-group">
+            <h2 class="heading">Əlaqə</h2>
+            <div class="controls">
+                <input type="text" id="name" class="floatLabel" name="name">
+                <label for="name">Name</label>
+            </div>
+            <div class="controls">
+                <input type="text" id="email" class="floatLabel" name="email">
+                <label for="email">Email</label>
+            </div>
+            <div class="controls">
+                <input type="tel" id="phone" class="floatLabel" name="phone">
+                <label for="phone">Telefon</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <h2 class="heading"></h2>
+            <input type="button" id="confirm" value="Təstiqlə">
+            <input type="button" id="cancel" value="Ləğv et">
+        </div>
+    </form>
+
+</section>
+

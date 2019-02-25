@@ -1,0 +1,150 @@
+﻿@model Yekun_JobStore.Models.Announcement
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+
+    <h4>Menu</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="About" class="control-label"></label>
+                    <input asp-for="About" class="form-control" />
+                    <span asp-validation-for="About" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AdvertTime" class="control-label"></label>
+                    <input asp-for="AdvertTime" class="form-control" />
+                    <span asp-validation-for="AdvertTime" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="City" class="control-label"></label>
+                    <input asp-for="City" class="form-control" />
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CompanyName" class="control-label"></label>
+                    <input asp-for="CompanyName" class="form-control" />
+                    <span asp-validation-for="CompanyName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Demand" class="control-label"></label>
+                    <input asp-for="Demand" class="form-control" />
+                    <span asp-validation-for="Demand" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Education" class="control-label"></label>
+                    <input asp-for="Education" class="form-control" />
+                    <span asp-validation-for="Education" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Experience" class="control-label"></label>
+                    <input asp-for="Experience" class="form-control" />
+                    <span asp-validation-for="Experience" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Icon" class="control-label"></label>
+                    <input asp-for="Icon" class="form-control" />
+                    <span asp-validation-for="Icon" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="LastTime" class="control-label"></label>
+                    <input asp-for="LastTime" class="form-control" />
+                    <span asp-validation-for="LastTime" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Link" class="control-label"></label>
+                    <input asp-for="Link" class="form-control" />
+                    <span asp-validation-for="Link" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MaxAge" class="control-label"></label>
+                    <input asp-for="MaxAge" class="form-control" />
+                    <span asp-validation-for="MaxAge" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MaxSalary" class="control-label"></label>
+                    <input asp-for="MaxSalary" class="form-control" />
+                    <span asp-validation-for="MaxSalary" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MinAge" class="control-label"></label>
+                    <input asp-for="MinAge" class="form-control" />
+                    <span asp-validation-for="MinAge" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MinSalary" class="control-label"></label>
+                    <input asp-for="MinSalary" class="form-control" />
+                    <span asp-validation-for="MinSalary" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Phone" class="control-label"></label>
+                    <input asp-for="Phone" class="form-control" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PhotoPath" class="control-label"></label>
+                    <input asp-for="PhotoPath" class="form-control" />
+                    <span asp-validation-for="PhotoPath" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SetTime" class="control-label"></label>
+                    <input asp-for="SetTime" class="form-control" />
+                    <span asp-validation-for="SetTime" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SocialNetworks" class="control-label"></label>
+                    <input asp-for="SocialNetworks" class="form-control" />
+                    <span asp-validation-for="SocialNetworks" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SubCategory" class="control-label"></label>
+                    <input asp-for="SubCategory" class="form-control" />
+                    <span asp-validation-for="SubCategory" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="UserName" class="control-label"></label>
+                    <input asp-for="UserName" class="form-control" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ViewCount" class="control-label"></label>
+                    <input asp-for="ViewCount" class="form-control" />
+                    <span asp-validation-for="ViewCount" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="WorkingTime" class="control-label"></label>
+                    <input asp-for="WorkingTime" class="form-control" />
+                    <span asp-validation-for="WorkingTime" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+</body>
+</html>

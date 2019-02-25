@@ -1,0 +1,56 @@
+﻿@model LoginModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+<link rel="stylesheet" href="~/css/logjob.css" />
+<link rel="stylesheet" href="~/css/announcement.css" />
+<section id="log">
+    <div class="parallax log-cont">
+        <hgroup>
+            <h2>İstifadəçi</h2>
+            <h6>Daxil ol və ya qeydiyyatdan keç</h6>
+        </hgroup>
+    </div>
+</section>
+
+<section id="login-page">
+    <div class="container">
+        <form asp-action="Login" asp-controller="Account" method="post" >
+            <div class="top-l"></div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <label asp-for="Email">EMAIL</label><br>
+                    <input asp-for="Email" id="email-l" placeholder="Email">
+                    <span asp-validation-for="Email"></span>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <label asp-for="Password">ŞİFRƏ</label> <br>
+                    <input asp-for="Password" id="password-l" placeholder="Password">
+                    <span asp-validation-for="Password"></span>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+
+                    <input checked id="remember-l" asp-for="RememberMe"> <label class="cols-sm-2 control-label">Məni xatırla</label>
+                    <span asp-validation-for="RememberMe"></span>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="bot-l">
+                <input  type="submit" value="Daxil ol" id="login-b">
+                <a href=""><i class="fas fa-question-circle"></i> Şifrəni unutmusan?</a>
+                <a asp-action="Selection"><span>Hesabınız yoxdur?</span> &nbsp;  Qeydiyyatdan keç <i class="fas fa-long-arrow-alt-right"></i>  </a>
+            </div>
+        </form>
+    </div>
+</section>

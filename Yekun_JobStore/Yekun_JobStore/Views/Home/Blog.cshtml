@@ -1,0 +1,168 @@
+﻿@{
+    ViewData["Title"] = "Blog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+
+<link rel="stylesheet" href="~/css/helpblg.css" />
+<section id="blog">
+    <div class="parallax blog-cont">
+        <hgroup>
+            <h2>Blog</h2>
+        </hgroup>
+    </div>
+</section>
+<section id="contain">
+    <div class="row ">
+        <div class="col-md-9 vacancies">
+            <div class="c-container">
+                <div class="c-item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="avatar">
+                                <img src="~/images/profile-avatar.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="share">Paylaş</div>
+                                <div class="socials">
+                                    <a class="icons" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="icons" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="icons" href=""><i class="fab fa-google-plus-g"></i></a>
+                                    <a class="icons" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="icons" href=""><i class="fab fa-pinterest-p"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <a asp-action="Wrong">
+                                <strong>CV'də əsla olmaması gərəkən 5 səhv</strong>
+                            </a>
+                            <div class="information">
+                                <span><i class="fas fa-pen"></i> &nbsp; Yazar Editor</span>
+                                <span><i class="far fa-calendar-alt"></i>&nbsp; 10/20/2018 </span>
+                                <span> <i class="fas fa-list-ul"></i>&nbsp; Karyera</span>
+                                <img src="~/images/f2108a74a2cf4ccbb2c99e386d064662.jpg" alt="">
+                                <p>
+                                    Hədəflədiyiniz işə girə bilmək üçün cv'nizdə olan məlumatlar kritik bir əhəmiyyət daşıyır. CV-yə daxil edilməməsi lazım olan məlumatlar da, iş axtarışı prosesini birbaşa təsir edə bilər.
+                                    <br> <br> CV hazırlamaq, karyeranız üçün atacağınız ilk və ən vacib addımlardan biridir. Doğru hazırlanmış bir CV bir çox qapını aça bilər. Ancaq diqqətsiz bir hazırlıq, diqqətsizcə edilən səhvlər və gərəksiz məlumatlar
+                                    isə iş tapmaq prosesini uzada bilər və istədiyiniz işə sahib olmaq üçün maneə törədə bilər.
+                                </p>
+                               <button type="submit" asp-action="Wrong" asp-controller="Home" class="continue">Oxumağa davam et</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-item">
+                    <div class="row">
+                        <div class="col-md-3 share">
+                            <div class="avatar">
+                                <img src="~/images/profile-avatar.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="share">Paylaş</div>
+                                <div class="socials">
+                                    <a class="icons" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="icons" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="icons" href=""><i class="fab fa-google-plus-g"></i></a>
+                                    <a class="icons" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="icons" href=""><i class="fab fa-pinterest-p"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9 ">
+                            <a asp-action="Question">
+                                <strong>İş müsahibələrində ən çox soruşulan 20 sual</strong>
+                            </a>
+                            <div class="information">
+                                <span><i class="fas fa-pen"></i> &nbsp; Yazar Editor</span>
+                                <span><i class="far fa-calendar-alt"></i>&nbsp; 10/20/2018 </span>
+                                <span> <i class="fas fa-list-ul"></i>&nbsp; Karyera</span>
+                                <img src="~/images/4b24ae1b965c43a282dcb1c7b8b95d48.png" alt="">
+                                <p>
+                                    İş müsahibəsinə hazırlanarkən ən çox hansı suallarla qarşılaşacağımızı, o suallara gözlənilən cavablar verib və ya verə bilməyəcəyimizi, hazırlıqsız yaxalanıb yaxalanmayacağımızı düşünürük. İş görüşmələrində tez-tez
+                                    soruşulan klassik müsahibə sualları olduğu kimi, artıq sürətlə dəyişən iş dünyası səbəbiylə müddətcə yeni suallar da əlavə oluna bilir. Bu suallara görüşdən əvvəl heç olmasa qısa bir müddət göz atmaq, üzərində düşünmək
+                                    daha məntiqli və təsir edici cavablar vermə ehtimalını artırır. Bu yazıda sizin üçün ən çox soruşulan müsahibə suallarını tərtib etdik.
+                                </p>
+                               <button type="submit" asp-action="Question" asp-controller="Home" class="continue">Oxumağa davam et</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-item">
+                    <div class="row">
+                        <div class="col-md-3 share">
+                            <div class="avatar">
+                                <img src="~/images/profile-avatar.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="share">Paylaş</div>
+                                <div class="socials">
+                                    <a class="icons" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="icons" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="icons" href=""><i class="fab fa-google-plus-g"></i></a>
+                                    <a class="icons" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="icons" href=""><i class="fab fa-pinterest-p"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <a asp-action="Download">
+                                <strong>5 pulsuz CV nümunəsi yüklə!</strong>
+                            </a>
+                            <div class="information">
+                                <span><i class="fas fa-pen"></i> &nbsp; Yazar Editor</span>
+                                <span><i class="far fa-calendar-alt"></i>&nbsp; 10/20/2018 </span>
+                                <span> <i class="fas fa-list-ul"></i>&nbsp; Karyera</span>
+                                <img src="~/images/841af654523e40eba8c528affba44195.jpg" alt="">
+                                <p>
+                                    Yaradıcı CV qarşımızdakı şəxslərə, şirkətlərə özümüzü daha asan izah etməyimizə köməkçi olur. Herşey bir CV ilə başlayır. Ümumiyyətlə karyera portalları üzərindən ya da word ya da pdf sənədi olaraq hazırlanan Cv digital
+                                    mühitdə baxılır və müsbət qiymətləndirilən cv-lər çap edilir.
+                                    <br> Mühüm dizaynerlər tərəfindən hazırlanmış pulsuz yaradıcı CV nümunələri sizə özünüzü ən yaxşı şəkildə izah etməyə imkan verəcəkdir.
+                                </p>
+                                 <button asp-action="Download" asp-controller="Home" type="submit" class="continue">Oxumağa davam et</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pages">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3 search">
+            <h3>Axtar</h3>
+            <div class="filter">
+                <div class="f-item">
+                    <input class="form-control form-control-lg" id="inputxs" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 search-s">
+            <h3>Axtar</h3>
+            <div class="filter">
+                <div class="f-item">
+                    <input class="form-control form-control-lg" id="inputxs" type="text">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

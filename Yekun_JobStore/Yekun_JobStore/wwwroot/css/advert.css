@@ -1,0 +1,343 @@
+.parallax.advert-cont {
+    background: url(../images/ishelanlari.png) no-repeat fixed 70% 0;
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    height: 270px;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 30px;
+    font-style: oblique;
+}
+
+#advert-p {
+    margin-bottom: 50px;
+}
+
+#job-info {
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+}
+
+.job-l button {
+    border-radius: 15px;
+    margin-top: 10px;
+    border: 1px solid transparent;
+    background-color: rgb(245, 208, 6);
+    color: white;
+}
+
+.job-name h1 {
+    font-size: 2.1em;
+    margin: 0;
+    font-weight: 500;
+    font-style: oblique;
+    color: #44494b;
+    padding: 10px;
+}
+
+.job-name span {
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid transparent;
+    background-color: rgb(245, 208, 6);
+    padding: 5px;
+    border-radius: 15px;
+    color: white;
+    display: inline-block;
+}
+
+.job-name {
+    padding: 5px 0px 0px 20px;
+}
+
+.job-b {
+    padding-left: 15px;
+}
+
+.job-b span {
+    padding: 0px 10px 10px 10px;
+    color: #44494b;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: oblique;
+    cursor: pointer;
+}
+
+.more-info {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px 15px;
+    padding: 30px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.m-item .col-md-2 {
+    align-self: center;
+}
+
+.m-item .col-md-2 i {
+    font-size: 22px;
+    color: rgb(245, 208, 6);
+}
+
+.row .first {
+    padding-left: 60px;
+}
+
+.m-item .col-md-10 strong {
+    display: block;
+    color: #44494b;
+}
+
+.m-item .col-md-10 span {
+    font-size: 14px;
+    color: #44494b;
+}
+
+.head-info {
+    margin-bottom: 30px;
+}
+
+.row.services img {
+    height: 90px;
+}
+
+.row.services {
+    height: 200px;
+    align-items: center;
+    background: #ebeeef;
+    margin-left: 0px;
+    margin-top: 30px;
+}
+
+.job-scl {
+    display: flex;
+    justify-content: center;
+}
+
+.job-scl div {
+    height: 40px;
+    width: 40px;
+    padding-left: 12px;
+    padding-top: 8px;
+    background-color: lightgrey;
+    color: white;
+    border-radius: 25px;
+    margin: 10px 5px 10px 0px;
+}
+
+.job-scl div:nth-child(1):hover {
+    background: #12dd09;
+}
+
+.job-scl div:nth-child(2):hover {
+    background: #4875B4;
+}
+
+.job-scl div:nth-child(3):hover {
+    background: #4099FF;
+}
+
+.job-scl div:nth-child(4):hover {
+    background: #d34836;
+}
+
+.job-scl div:nth-child(5):hover {
+    background: #C92228;
+}
+
+.job-scl div:nth-child(6):hover {
+    background: #4875B4;
+}
+
+.job-share span {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
+    justify-content: center;
+}
+
+.second {
+    padding-left: 60px;
+}
+
+.services strong {
+    color: #44494b;
+    display: block;
+    font-size: 22px;
+}
+
+strong:hover {
+    color: rgb(230, 183, 6);
+}
+
+.job-share {
+    display: flow-root;
+    height: 150px;
+    background: #ebeeef;
+    padding: 30px 0px 30px 0px;
+    align-items: center;
+}
+
+.serv-scl {
+    display: inline-flex;
+}
+
+.serv-scl div {
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+    padding-top: 3px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.serv-scl div:nth-child(1) {
+    background-color: #d34836;
+}
+
+.serv-scl div:nth-child(2) {
+    background-color: #5873b1;
+}
+
+.serv-scl div:nth-child(3) {
+    background-color: #4099ff;
+}
+
+.serv-scl div:nth-child(4) {
+    background-color: #d34836;
+}
+
+.serv-scl div:nth-child(5) {
+    background-color: #4875b4;
+}
+
+@media screen and (max-width: 949px) {
+    .more-info {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+    }
+}
+
+.tags {
+    display: inline-flex;
+    border-top: 1px solid lightgrey;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    height: 70px;
+    align-items: center;
+}
+
+.grid-simcontainer {
+    height: auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    padding: 10px 30px;
+}
+
+.gridsim-item {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.gridsim-item .col-md-3 {
+    position: inherit;
+}
+
+.gridsim-item .col-md-9 {
+    position: inherit;
+}
+
+.gridsim-item strong {
+    font-size: 16px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: gray;
+}
+
+.gridsim-item span {
+    line-height: 1.7;
+    color: #44494b;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+
+.gridsim-item h4 {
+    padding-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #44494b;
+}
+
+.gridsim-item:hover {
+    background-color: rgb(85, 85, 85);
+}
+
+.gridsim-item:hover strong {
+    color: white;
+}
+
+.gridsim-item:hover h4 {
+    color: white;
+}
+
+.gridsim-item:hover span {
+    color: white;
+}
+
+.gridsim-item img {
+    padding-left: 20px;
+    height: 90px;
+}
+
+.similar-v h2 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #44494b;
+    font-size: 1.7em;
+    padding: 40px 40px 10px 40px;
+}
+
+.similar-v {
+    border-bottom: 0.5px solid lightgray;
+    margin: 0px 30px 15px 30px;
+}
+
+@media screen and (max-width: 949px) {
+    .grid-simcontainer {
+        height: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    }
+}
+
+.job-b i {
+    color: rgb(245, 208, 6);
+}
+
+.job-b span:nth-child(2):hover {
+    color: rgb(245, 208, 6);
+}

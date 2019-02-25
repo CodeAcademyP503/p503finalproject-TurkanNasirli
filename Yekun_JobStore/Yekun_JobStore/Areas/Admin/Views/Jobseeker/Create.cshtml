@@ -1,0 +1,122 @@
+﻿
+@model Yekun_JobStore.Models.JobSeeker
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+
+    <h4>Menu</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="JobName" class="control-label"></label>
+                    <input asp-for="JobName" class="form-control" />
+                    <span asp-validation-for="JobName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Knowledge" class="control-label"></label>
+                    <input asp-for="Knowledge" class="form-control" />
+                    <span asp-validation-for="Knowledge" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Link" class="control-label"></label>
+                    <input asp-for="Link" class="form-control" />
+                    <span asp-validation-for="Link" class="text-danger"></span>
+                    <div class="form-group">
+                        <label asp-for="Phone" class="control-label"></label>
+                        <input asp-for="Phone" class="form-control" />
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="PhotoPath" class="control-label"></label>
+                        <input asp-for="PhotoPath" class="form-control" />
+                        <span asp-validation-for="PhotoPath" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Salary" class="control-label"></label>
+                        <input asp-for="Salary" class="form-control" />
+                        <span asp-validation-for="Salary" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="SetTime" class="control-label"></label>
+                        <input asp-for="SetTime" class="form-control" />
+                        <span asp-validation-for="SetTime" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="SocialNetworks" class="control-label"></label>
+                        <input asp-for="SocialNetworks" class="form-control" />
+                        <span asp-validation-for="SocialNetworks" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="SubCategory" class="control-label"></label>
+                        <input asp-for="SubCategory" class="form-control" />
+                        <span asp-validation-for="SubCategory" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="WorkTime" class="control-label"></label>
+                        <input asp-for="WorkTime" class="form-control" />
+                        <span asp-validation-for="WorkTime" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ViewCount" class="control-label"></label>
+                        <input asp-for="ViewCount" class="form-control" />
+                        <span asp-validation-for="ViewCount" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="About" class="control-label"></label>
+                        <input asp-for="About" class="form-control" />
+                        <span asp-validation-for="About" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="City" class="control-label"></label>
+                        <input asp-for="City" class="form-control" />
+                        <span asp-validation-for="City" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Birthday" class="control-label"></label>
+                        <input asp-for="Birthday" class="form-control" />
+                        <span asp-validation-for="Birthday" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Education" class="control-label"></label>
+                        <input asp-for="Education" class="form-control" />
+                        <span asp-validation-for="Education" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Experience" class="control-label"></label>
+                        <input asp-for="Experience" class="form-control" />
+                        <span asp-validation-for="Experience" class="text-danger"></span>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+</body>
+</html>

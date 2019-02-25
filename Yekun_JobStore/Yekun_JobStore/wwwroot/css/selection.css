@@ -1,0 +1,134 @@
+.parallax.kind-cont {
+    background: url(../images/heading-bg.png) no-repeat fixed 70% 0;
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    height: 200px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    padding-left: 30px;
+}
+
+#reselection {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-auto-rows: 100px auto 100px;
+}
+
+.selection {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-gap: 50px;
+}
+
+.selection div.select_s {
+    height: 450px;
+    width: 300px;
+    background-color: #ebeeef;
+    color: #44494b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.selection div.select_a {
+    height: 450px;
+    width: 300px;
+    background-color: #44494b;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.free {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-top: 40px;
+    height: 150px;
+    -webkit-app-region: 50px;
+    background-color: #44494b;
+    width: 150px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    border: 6px solid rgb(230, 183, 6);
+    color: white;
+}
+
+.selection span.head {
+    text-align: center;
+    line-height: 1.8em;
+    font-size: 33px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.selection p {
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.selection i {
+    color: #e6b706;
+}
+
+.log_in {
+    width: 190px;
+    height: 50px;
+    color: #44494b;
+    background-color: #e6b706;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    align-self: center;
+    margin-top: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.log_in:hover {
+        color: #44494b;
+        text-decoration: none;
+        opacity: 0.8;
+ }
+
+
+@media screen and (max-width: 949px) {
+    .selection {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        grid-gap: 50px;
+    }
+    .selection div.select_a {
+        height: auto;
+        width: 100%;
+        background-color: #44494b;
+    }
+    .selection div.select_s {
+        height: auto;
+        width: 100%;
+        background-color: #ebeeef;
+        color: #44494b;
+    }
+    .log_in {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,183 @@
+﻿@model IEnumerable<Yekun_JobStore.Models.Announcement>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <td>
+                    @Html.DisplayNameFor(model => model.Email)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.AdvertTime)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.Phone)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.About)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.City)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.Education)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.Experience)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.Link)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.PhotoPath)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.SubCategory)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.SocialNetworks)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.ViewCount)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.MaxAge)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.MaxSalary)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.Icon)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.MinAge)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.MinSalary)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.SetTime)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.UnknownSalary)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.UserName)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.ViewCount)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.WorkingTime)
+                </td>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AdvertTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Phone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.About)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Demand)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Education)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Experience)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CompanyName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Link)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhotoPath)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Icon)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SubCategory)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SocialNetworks)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ViewCount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaxAge)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaxSalary)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.MinAge)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MinSalary)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SetTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnknownSalary)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ViewCount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WorkingTime)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

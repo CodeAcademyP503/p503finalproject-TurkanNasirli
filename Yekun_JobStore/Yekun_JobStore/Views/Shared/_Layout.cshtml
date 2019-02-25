@@ -1,0 +1,128 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/lib/dist/css/bootstrap-select.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/index.css">
+    <title>JobStore</title>
+</head>
+
+<body>
+    <!-- contact part start  -->
+    <section id="contact">
+        <div class="mail">
+            <p>
+                <span style="color:rgb(231, 187, 19)">Əlaqə:</span> <span style="color: rgb(83, 87, 89);">info@jobstore.az</span>
+            </p>
+        </div>
+        <div class="social">
+            <ul>
+                <li> <a href="https://www.facebook.com/jobstore.az/"><i class="fab fa-facebook"></i></a> </li>
+                <li> <a href="https://www.instagram.com/jobstore.az/"><i class="fab fa-instagram"></i></a> </li>
+                <li> <a href="https://www.linkedin.com/company/jobstore-az"><i class="fab fa-linkedin-in"></i></a> </li>
+            </ul>
+        </div>
+    </section>
+    <!-- contact part end  -->
+    <!-- menu part start  -->
+    <section id="nav-bar">
+        <div class="topnav" id="topnavs">
+
+            <div class="logo">
+                <a href="#logo"> <img src="~/images/logo.png"></a>
+            </div>
+            <div class="menu-icon">
+                <a style="font-size:15px;" onclick="responsiveNav()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+            <div class="menu" id="menus">
+                <a asp-action="Index" asp-controller="Home" class="active">Ana səhifə</a>
+                <a asp-action="Announcement" asp-controller="Home">İş elanları</a>
+                <a asp-action="Jobseeker" asp-controller="Home">İş axtaranlar</a>
+                <a asp-action="Blog" asp-controller="Home">Blog</a>
+                <a asp-action="Advertising" asp-controller="Home" class="e-btn">Elan ver</a>
+                <a asp-action="Login" asp-controller="Account"><i class="fas fa-sign-in-alt"></i> &nbsp; Daxil ol</a>
+                <a asp-action="Selection" asp-controller="Home" class="r-btn"><i class="fa fa-key"></i> &nbsp; Qeydiyyat</a>
+            </div>
+        </div>
+    </section>
+    <!-- menu part end  -->
+    @RenderBody()
+    <!-- footer part start  -->
+    <section id="info">
+        <div class="grid-icontainer">
+            <div class="gridi-item">
+                <span>JOBSTORE.AZ</span>
+                <p>Bakıda, eləcə də Azərbaycanın digər şəhərlərində müxtəlif bölmələr üzrə iş elanları! Tez bir zamanda iş tapmaq istəyirsinizsə, Jobstore.az'da öz CV-nizi yerləşdirə, istədiyiniz işi tapa bilərsiniz.</p>
+            </div>
+            <div class="gridi-item">
+                <span>BİZİMLƏ ƏLAQƏ</span>
+                <ul class="footer_list">
+                    <li>Haqqımızda</li>
+                    <li>Saytda reklam</li>
+                    <li>İstifadəçi şərtləri</li>
+                </ul>
+            </div>
+            <div class="gridi-item">
+                <span>XİDMƏTLƏR</span>
+                <ul class="footer_list">
+                    <li>Blog</li>
+                    <li>Vakansiyalar</li>
+                    <li>İş axtaranlar</li>
+                    <li>İş elanı yerləşdir</li>
+                    <li>CV yerləşdir</li>
+                </ul>
+            </div>
+            <div class="gridi-item">
+                <span>
+                    STATİSTİKA
+                </span>
+                <p>
+                    <a href="https://www.liveinternet.ru/?jobstore.az">
+                        <img src="~/images/Statistic.png" alt="">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div>
+            © 2017 - 2019 Made with &nbsp;
+            <i class="far fa-heart"></i> &nbsp; JobStore
+        </div>
+    </section>
+    <!-- footer part end  -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/dist/js/bootstrap-select.js"></script>
+    <script src="~/js/index.js"></script>
+    <script>
+        function createOptions(number) {
+            var options = [],
+                _options;
+
+            for (var i = 0; i < number; i++) {
+                var option = '<option value="' + i + '"> ' + i + '</option>';
+                options.push(option);
+            }
+            _options = options.join('');
+            $('#number')[0].innerHTML = _options;
+        }
+        createOptions(10);
+    </script>
+
+    @RenderSection("Script", false)
+</body>
+</html>

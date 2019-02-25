@@ -1,0 +1,103 @@
+﻿@model RegisterModel_a
+@{
+    ViewData["Title"] = "Registerfor_adv";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+}
+<link rel="stylesheet" href="~/css/regfor-adv.css" />
+<section id="register">
+    <div class="parallax reg-a-cont">
+        <hgroup>
+            <h2>İşəgötürən</h2>
+            <h6>Qeydiyyatdan keç</h6>
+        </hgroup>
+    </div>
+</section>
+<section>
+    <section id="reg-a-page">
+        <div class="container">
+            <form asp-action="Registerfor_adv" asp-controller="Account" method="post">
+                <div class="top-a"></div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <label asp-for="Name">AD</label><br>
+                        <input asp-for="Name" type="text" id="name-a" name="Name" placeholder="Ad">
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <label asp-for="Surname">Soyad</label> <br>
+                        <input asp-for="Surname" type="text" id="surname-a" name="Surname" placeholder="Soyad">
+                        <span asp-validation-for="Surname"></span>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <label asp-for="CompanyName">ŞİRKƏT ADI</label> <br>
+                        <input asp-for="CompanyName" type="text" id="compamy-a" name="CompanyName" placeholder="Şirkət adı">
+                        <span asp-validation-for="CompanyName"></span>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <label asp-for="Email">EMAIL</label> <br>
+                        <input asp-for="Email" type="email" id="email-a" name="Email" placeholder="Email">
+                        <span asp-validation-for="Email"></span>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <label asp-for="Phone">TELEFON</label> <br>
+                        <input asp-for="Phone" type="tel" id="phone-a" name="Phone" placeholder="Telefon">
+                        <span asp-validation-for="Phone"></span>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <label asp-for="Password">ŞİFRƏ</label> <br>
+                        <input asp-for="Password" type="password" id="password-a" name="Password" placeholder="Şifrə">
+                        <span asp-validation-for="Password"></span>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <label asp-for="ConfirmPassword">ŞİFRƏ TƏSDİQİ</label> <br>
+                        <input asp-for="ConfirmPassword" type="password" id="confirm-a" name="ConfirmPassword" placeholder="Şifrə">
+                        <span asp-validation-for="ConfirmPassword"></span>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 note">
+                        <span>Qeyd1:</span>&nbsp; <span>Şirkət kimi qeydiyyat sizə yalnız</span>&nbsp; <strong class="vac">Vakansiya</strong> &nbsp;<span>yerləşdirmə imkanı verir.</span> <br>
+                        <span>Qeyd2:</span> &nbsp;<strong>CV</strong> &nbsp;<span>yerləşdirmək üçün </span>&nbsp;
+                        <a asp-action="Registerfor_jsk"> <strong class="jseek">İş axtaran</strong></a> &nbsp;<span>  kimi qeydiyyatdan keçin.</span>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <div class="bot-a">
+                    <input type="submit" value="Qeydiyyatdan keç" id="reg-a-b">
+                    <a asp-action="Registerfor_jsk">İş axtaran kimi qeydiyyatdan keç</a>
+                    <a href=""><i class="fas fa-question-circle"></i> Şifrəni unutmusan?</a>
+                    <a asp-action="Login"><span> Hesabınız var?</span> &nbsp;  Daxil ol  <i class="fas fa-long-arrow-alt-right"></i> </a>
+                </div>
+            </form>
+        </div>
+    </section>
+</section>
+

@@ -1,0 +1,73 @@
+#email-l,
+#password-l {
+    height: 55px;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding-left: 26px;
+}
+
+.top-l {
+    height: 100px;
+}
+
+.row {
+    height: 100px;
+}
+
+#remember-l {
+    height: 18px;
+    width: 18px;
+    margin: 15px 15px 15px 0px;
+}
+
+.bot-l {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    border-top: 1px solid lightgray;
+}
+
+#login-b {
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: #e6b706;
+    margin-bottom: 15px;
+}
+
+#login-b:hover {
+    opacity: 0.8;
+}
+
+.bot-l a {
+    text-decoration: none;
+    color: #e6b706;
+}
+
+.bot-l a:hover {
+    color: #e6b706;
+    text-decoration: none;
+}
+
+.bot-l a span {
+    color: black;
+}
+
+.bot-l a span:hover {
+    color: black;
+}
+.parallax.log-cont {
+    background: url(../images/heading-bg.png) no-repeat fixed 70% 0;
+    background-size: cover;
+    color: #fff;
+    width: 100%;
+    height: 200px;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 30px;
+}

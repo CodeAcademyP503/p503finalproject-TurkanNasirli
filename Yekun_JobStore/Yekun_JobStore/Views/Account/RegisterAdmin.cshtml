@@ -1,0 +1,54 @@
+﻿@model AdminRegisterModel;
+@{
+    Layout = null;
+}
+
+<link rel="stylesheet" href="~/css/adm_reg.css" />
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SignUp Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+</head>
+<body>
+    <!-- main -->
+    <div class="main-w3layouts wrapper">
+        <h1>Qeydiyyat formu</h1>
+        <div class="main-agileinfo">
+            <div class="agileits-top">
+                <form asp-action="RegisterAdmin" asp-controller="Account" method="post">
+                    <input class="text" asp-for="Name" placeholder="Ad">
+                    <span asp-validation-for="Name"></span>
+                    <input class="text email" asp-for="Email" placeholder="Email" required="">
+                    <span asp-validation-for="Email"> </span>
+                    <input class="text" asp-for="Password" placeholder="Şifrə" required="">
+                    <span asp-validation-for="Password"> </span>
+                    <input class="text w3lpass" asp-for="ConfirmPassword" placeholder="Şifrəni təstiqlə" required="">
+                    <span asp-validation-for="ConfirmPassword"> </span>
+                    <div class="wthree-text">
+                        <div class="clear"> </div>
+                    </div>
+                    <input type="submit" value="Qeydiyyatdan kec">
+                </form>
+                <p>Hesabınız var? <a asp-action="Login" asp-controller="Account"> Daxil ol</a></p>
+            </div>
+        </div>
+        <ul class="colorlib-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

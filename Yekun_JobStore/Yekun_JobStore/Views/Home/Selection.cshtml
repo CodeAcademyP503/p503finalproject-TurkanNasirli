@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "Selection";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+<link rel="stylesheet" href="~/css/selection.css" />
+<section id="kind">
+    <div class="parallax kind-cont">
+        <hgroup>
+            <h2>Qeydiyyat növü</h2>
+            <h6>Qeydiyyatdan keç</h6>
+        </hgroup>
+    </div>
+</section>
+
+<section id="reselection">
+    <div class="item"></div>
+    <div class="selection">
+        <div class=select_s>
+            <span class=head>İş axtaran</span>
+            <div class="free">
+                <span class=free_s>Pulsuz</span>
+            </div>
+            <p><i class="fas fa-check-circle">&nbsp;</i>CV yerləşdirmə</p>
+            <p><i class="fas fa-check-circle">&nbsp;</i>30 gün aktiv qalma müddəti</p>
+            <a asp-action="Registerfor_jsk" asp-controller="Account" class="log_in">Qeydiyyat</a>
+        </div>
+        <div class="select_a">
+            <span class=head>İşəgötürən</span>
+            <div class="free">
+                <span class=free_s>Pulsuz</span>
+            </div>
+            <p> <i class="fas fa-check-circle"></i> &nbsp; İş elanı yerləşdirmə</p>
+            <p> <i class="fas fa-check-circle"></i> &nbsp; 30 gün aktiv qalma müddəti</p>
+            <a asp-action="Registerfor_adv" asp-controller="Account" class="log_in">Qeydiyyat</a>
+        </div>
+    </div>
+    <div class="item"></div>
+</section>
+
